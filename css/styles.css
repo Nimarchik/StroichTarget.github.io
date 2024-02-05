@@ -121,7 +121,7 @@ p {
 
 .nav_list-link {
     padding: 5px 0;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .nav_list-link::before {
@@ -135,7 +135,7 @@ p {
     z-index: 0;
     position: absolute;
     background: #23abd4;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .nav_list-link:hover::before {
@@ -156,24 +156,93 @@ p {
     flex-grow: 1;
 }
 
-.top_content-list{
+.top_content-list {
     display: grid;
     width: 650px;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    margin-bottom: 20px;
 }
 
-.top_content-item{
+.top_content-item {
     display: flex;
     align-items: center;
     width: 300px;
-
     gap: 20px;
 }
 
 .top_content-svg {
     width: 50px;
     height: 50px;
+}
+
+
+.top_content {
+    position: relative;
+    top: 50%;
+    transform: translate(0, 15%);
+}
+
+.top_content-group {
+    background-color: #944AFF;
+    padding: 20px;
+    width: 800px;
+    height: 460px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #944AFF;
+}
+
+.top_content-text {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 14px;
+    opacity: .6;
+    letter-spacing: 3px;
+}
+
+.top_content-title {
+    text-transform: uppercase;
+    white-space: wrap;
+    font-size: 32px;
+    margin-bottom: 20px;
+    width: 640px;
+    line-height: 1.24;
+}
+
+.top_content-title span {
+    color: #4900C4;
+}
+
+.top_content-text-bottom {
+    width: 350px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.top_content-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 260px;
+    height: 40px;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: #000;
+    background-color: #FFC044;
+    box-shadow: 0 30px 100px #FFC044;
+    transition: all .4s;
+
+}
+
+.top_content-link:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 15px #FFC044;
+    transition: all .4s;
 }
 
 .footer {
