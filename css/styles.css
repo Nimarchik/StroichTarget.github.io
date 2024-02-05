@@ -1,0 +1,181 @@
+:root {
+    --bg-color: linear-gradient(90deg, rgba(0, 18, 255, 1) 0%, rgba(0, 3, 46, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(42, 0, 72, 1) 168%, rgba(140, 0, 240, 1) 134%);
+    --fonts: 'Montserrat', sans-serif;
+}
+
+
+*::after,
+*::before,
+body,
+html {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background: var(--bg-color);
+    font-family: var(--fonts);
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+}
+
+.container {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 20px 0;
+}
+
+.nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_list_icon,
+.nav_list {
+    display: flex;
+    gap: 20px;
+}
+
+.nav_list_icon {
+    align-items: center;
+
+}
+
+.icon-ins,
+.icon-teleg {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    background: #cccccc9a;
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+.icon-ins:hover {
+    fill: orangered;
+    box-shadow: 0 0 20px orangered;
+    filter: contrast(150%) brightness(200%);
+    transition: all .3s;
+}
+
+.icon-teleg:hover {
+    fill: rgb(65, 65, 224);
+    box-shadow: 0 0 20px rgb(65, 65, 224);
+    transition: all .3s;
+}
+
+.nav_list_icon-item-text {
+    display: flex;
+}
+
+.text-item {
+    width: 100px;
+    white-space: wrap;
+}
+
+.nav_list {
+    font-size: 18px;
+}
+
+.nav_list-item {
+    position: relative;
+}
+
+.nav_list-link {
+    padding: 5px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav_list-link::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    bottom: 5px;
+    left: 0;
+    bottom: -3px;
+    z-index: 0;
+    position: absolute;
+    background: #23abd4;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav_list-link:hover::before {
+    width: 100%;
+}
+
+.nav_list-link-tel {
+    font-weight: 700;
+}
+
+.img-logo {
+    width: 200px;
+    height: 40px;
+    fill: #fff;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.top_content-list{
+    display: grid;
+    width: 650px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.top_content-item{
+    display: flex;
+    align-items: center;
+    width: 300px;
+
+    gap: 20px;
+}
+
+.top_content-svg {
+    width: 50px;
+    height: 50px;
+}
+
+.footer {
+    height: 100px;
+}
