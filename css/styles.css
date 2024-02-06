@@ -269,6 +269,10 @@ p {
     border-bottom: 1px solid rgba(255, 255, 255, .3);
 }
 
+.title-two {
+    font-size: 45px;
+}
+
 .result_group {
     display: flex;
     gap: 15px;
@@ -307,7 +311,7 @@ p {
 }
 
 .two {
-    margin: 50px 0 0 auto;
+    margin: 70px 0 70px auto;
     margin-top: 50px;
 }
 
@@ -322,22 +326,27 @@ p {
     flex-direction: row-reverse;
 }
 
-.result_cart-two-img,
-.result_cart-one-img {
+.result_cart-one-img,
+.result_cart-two-img {
     width: 300px;
     height: 300px;
     border-radius: 10px;
+    box-shadow: 0 0 10px #fff;
+}
+
+
+.result_cart-two-img {
     transform: rotate3d(2, 1, -2, 45deg);
+    float: left;
 
 }
 
 .result_cart-one-img {
     float: right;
+    transform: rotate3d(2, -1, -2, -45deg);
+
 }
 
-.result_cart-two-img {
-    float: left;
-}
 
 
 
