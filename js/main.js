@@ -1,5 +1,15 @@
 AOS.init();
 
+let burger = document.querySelector('.burger');
+let closeNav = document.querySelector('.modal-close-nav');
+let list = document.querySelector('.mobile_list');
+
+burger.addEventListener('click', () => {
+  list.classList.add('--show');
+  closeNav.addEventListener('click', () => {
+    list.classList.remove('--show');
+  })
+})
 
 $('#phone').on('input', function () {
   var val = this.value;
@@ -40,3 +50,6 @@ document.querySelectorAll('.uniForm').forEach((e) => {
   })
 
 })
+
+
+
