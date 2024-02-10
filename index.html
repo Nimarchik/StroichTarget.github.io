@@ -28,6 +28,7 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
     <script src="js/main.js" defer></script>
 </head>
 
@@ -931,27 +932,30 @@ c32 155 34 147 -27 147 -43 0 -50 2 -45 18 3 9 8 29 12 45 l6 27 169 0 c137 0
                     </div>
                     <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
 
-                        <form class="forms">
+                        <form class="forms uniForm">
 
                             <!-- Hidden Required Fields -->
                             <input type="hidden" name="project_name" value="Stroich Trget">
                             <input type="hidden" name="admin_email" value="igorstro82@gmail.com">
                             <input type="hidden" name="form_subject" value="footer form">
                             <!-- END Hidden Required Fields -->
+
+
                             <div class="group-name">
-                                <input type="text" name="first-name" class="first_name" id="names" required>
+                                <input type="text" name="Name" class="first_name" id="names" required>
                                 <label class="label-inp" for="names">
                                     Ваше ім'я
                                 </label>
                             </div>
 
-                            <input type="tel" name="tel" class="telephone" id="phone" value="+380" required>
+                            <input type="email" name="E-mail" class="telephone"  placeholder="Ваш E-mail" required>
 
                             <div class="group-business">
-                                <input type="text" id="business" class="business-inp">
+                                <input type="text" name="Message" id="business" class="business-inp" title="Вкажіть номер телефона або имя в телеграм">
                                 <label class="label-inp" for="business">
                                     <p class="business-text">Чим займається ваш бізнес:</p>
                                 </label>
+                                <p class="text_info"></p>
                             </div>
 
                             <button type="submit" class="form_submit">Відправити</button>
@@ -1093,7 +1097,7 @@ c32 155 34 147 -27 147 -43 0 -50 2 -45 18 3 9 8 29 12 45 l6 27 169 0 c137 0
                 </nav>
             </div>
 
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            
         </footer>
     </div>
     <div class="modal_thank" style="display: none;">
@@ -1126,6 +1130,7 @@ c32 155 34 147 -27 147 -43 0 -50 2 -45 18 3 9 8 29 12 45 l6 27 169 0 c137 0
             <p class="modal_thank-text">Ваше повідомлення відправленно, очікуйте дзвінка таргетолога!</p>
         </div>
     </div>
+   
 </body>
 
 </html>
