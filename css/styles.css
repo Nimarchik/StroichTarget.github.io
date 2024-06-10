@@ -85,24 +85,47 @@ input {
 	transition: 2s all;
 }
 
+.pred__img{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 210px;
+	overflow-x: hidden;
+	animation: animalsPreloads 2s infinite alternate ;
+
+}
+
+@keyframes animalsPreloads {
+	0%{
+		box-shadow: 0px  0 10px #4900c4, 0px 0 20px #23abd4, 0px 0 20px #EA95FF;
+	}
+	100%{
+		box-shadow: 0px  10px 20px #4900c4, 0px 5px 50px #23abd4, 0px 4px 50px #EA95FF;
+
+	}
+}
+
+
+
 .preloader.done {
 	opacity: 0;
 	visibility: hidden;
 }
-
+/* 
 .loader {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 75px;
-	height: 75px;
+	width: 150px;
+	height: 150px;
 	border: 10px solid rgba(255, 255, 255, 0.15);
 	border-radius: 50%;
 	border-top-color: #4e4d93;
 	border-bottom-color: #4e4d93;
-	filter: drop-shadow(0 0 5px #4e4d93) contrast(150%);
-	animation: spin 3s infinite;
+	filter: drop-shadow(0 0 10px #4e4d93) contrast(150%) ;
+	animation: spin 3.1s infinite;
 }
 
 .color {
@@ -110,16 +133,16 @@ input {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 105px;
-	height: 105px;
+	width: 150px;
+	height: 150px;
 	border-radius: 50%;
 	border: 10px solid rgba(255, 255, 255, 0.15);
 	border-top-color: #4e4d93;
 	border-bottom-color: #4e4d93;
 	z-index: 1;
-	filter: contrast(150%) blur(6px);
-	animation: spin2 3s infinite;
-}
+	filter: contrast(150%) blur(10px);
+	animation: spin2 3.2s infinite;
+} 
 
 @keyframes spin {
 	0% {
@@ -137,7 +160,7 @@ input {
 	100% {
 		transform: translate(-50%, -50%) rotate(-360deg);
 	}
-}
+} */
 
 .wrapper {
 	display: flex;
@@ -245,10 +268,13 @@ input {
 }
 
 .img-logo {
-    width: 200px;
-    height: 30px;
+	width: 100px;
+	height: 39px;
     fill: #fff;
-    box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 15px #fff;
+}
+.logo-link{
+	height: 39px;
 }
 
 .main {
@@ -575,6 +601,7 @@ swiper-slide {
 
 .team_cart-text {
     font-size: 16px;
+    width: 250px;
 }
 
 .sect-form {
@@ -596,7 +623,7 @@ swiper-slide {
 }
 
 .group-name,
-.group-business {
+.group-business, .group-telephone {
     position: relative;
 }
 
@@ -634,7 +661,8 @@ swiper-slide {
 }
 
 .first_name:focus ~ .label-inp,
-.business-inp:focus ~ .label-inp {
+.business-inp:focus ~ .label-inp,
+.telephone:focus ~ .label-inp  {
     top: -20%;
     padding: 5px 10px;
     color: #000;
