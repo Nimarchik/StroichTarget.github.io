@@ -170,7 +170,7 @@ input {
 .img-logo {
     width: 200px;
     height: 30px;
-    fill: #fff;
+    fill: #fff !important;
     box-shadow: 0 0 10px #fff;
 }
 
@@ -469,19 +469,26 @@ swiper-slide {
 .team {
     padding: 100px 0;
 }
+.team__cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px 120px;
 
+}
 .team_cart {
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 30px ;
 }
 
 .team_cart-img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    box-shadow: 0 0 0px 5px rgba(0, 38, 255, 0.5);
+    box-shadow: 0 0 0px 2px rgba(0, 38, 255, 0.5);
 }
 
 
@@ -498,6 +505,7 @@ swiper-slide {
 
 .team_cart-text {
     font-size: 16px;
+    width: 250px;
 }
 
 
@@ -519,13 +527,13 @@ swiper-slide {
 .forms {}
 
 .group-name,
-.group-business {
+.group-business, .group-telephone {
     position: relative;
 }
 
 .label-inp {
     position: absolute;
-    top: 10%;
+    top: 0;
     left: 3%;
     z-index: 2;
     color: #fff;
@@ -557,8 +565,9 @@ swiper-slide {
     box-shadow: 0 0 20px #944AFF;
 }
 
-.first_name:focus ~ .label-inp,
-.business-inp:focus ~ .label-inp {
+.first_name:focus~.label-inp,
+.business-inp:focus~.label-inp, 
+.telephone:focus~.label-inp {
     top: -20%;
     padding: 5px 10px;
     color: #000;
@@ -656,6 +665,7 @@ swiper-slide {
 .mobile_list {
     display: none;
 }
+
 
 @media (max-width: 1024px) {
 
@@ -801,10 +811,14 @@ swiper-slide {
     .list-footer {
         display: none;
     }
+
+    .label-inp {
+        font-size: 9px;
+    }
 }
 
 /* MOBILE мобилка*/
-@media (max-width: 425px) {
+@media (max-width: 540px) {
     .container {
         width: 360px;
     }
@@ -932,7 +946,6 @@ swiper-slide {
     .result_cart {
         padding: 10px;
         width: 300px;
-        height: 500px;
         margin: 0 auto;
     }
 
@@ -1055,4 +1068,43 @@ swiper-slide {
     .svg-top {
         filter: drop-shadow(0 0 5px #fff);
     }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        width: 320px;
+    }
+
+    .top_content-group {
+        width: 280px;
+    }
+
+    .top_content-text-bottom {
+        width: 300px;
+    }
+
+    .top_content-link {
+        width: 240px;
+    }
+
+    .result_title {
+        width: 290px;
+        font-size: 21px;
+    }
+
+    .result_cart {
+        width: 280px;
+    }
+
+    .task-text {
+        width: 290px;
+    }
+
+    .first_name,
+    .telephone,
+    .business-inp {
+        width: 280px;
+    }
+
+
 }
